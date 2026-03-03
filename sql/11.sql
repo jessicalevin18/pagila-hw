@@ -8,4 +8,4 @@ SELECT film_id, title, count(*)
     JOIN inventory USING (film_id)
     WHERE title ILIKE 'H%'
     GROUP by film_id
-    ORDER BY film_id DESC;
+    ORDER BY title DESC;
